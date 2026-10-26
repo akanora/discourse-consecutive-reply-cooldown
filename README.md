@@ -39,6 +39,7 @@ Placeholders can be written as `{name}` or `%{name}`.
 
 ## Notes
 
+- Setting changes reach the browser when the page loads. After changing a setting, reload the page (Ctrl+F5) to see the new behavior. Other users get the change the next time they load or reload the site.
 - The check runs in the browser when the composer is submitted. Replies sent through the API or by email are not checked.
 - Small-action posts (for example "closed this topic"), whispers and deleted posts do not count as the last post.
 - The component uses `api.composerBeforeSave`, which allows only one handler. Another theme or plugin that also uses it will conflict with this one.
