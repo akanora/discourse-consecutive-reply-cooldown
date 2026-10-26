@@ -1,0 +1,28 @@
+tr_TR:
+  theme_metadata:
+    settings:
+      cooldown_enabled: "Kullanıcıların bir konuya bekleme süresi dolmadan art arda mesaj yazmasını engelle."
+      cooldown_duration: "Konudaki son mesaj kullanıcının kendisine aitse yeniden yazabilmesi için beklemesi gereken süre. Birimi aşağıdan seçilir."
+      cooldown_unit: "Bekleme süresinin birimi (dakika veya saat)."
+      exempt_staff: "Yöneticiler ve moderatörler bu kuraldan muaf tutulur."
+      include_private_messages: "Kuralı kişisel mesajlarda da uygula."
+      texts:
+        description: "Kullanıcılara gösterilen metinler. Çevirisi olmayan diller varsayılan metni kullanır. Yer tutucular: {time_left}, {duration}, {count}, {hours}, {minutes}."
+        schema:
+          properties:
+            key:
+              label: Anahtar
+              description: Bu metnin hangisi olduğu
+            text:
+              label: Varsayılan metin
+              description: Çevirisi olmayan dillerde gösterilir
+            translations:
+              label: Çeviriler
+              description: Bu metnin dile özel karşılıkları
+              properties:
+                locale:
+                  label: Dil
+                  description: Bu çevirinin dilini seçin
+                text:
+                  label: Metin
+                  description: Bu dil için çevrilmiş metin

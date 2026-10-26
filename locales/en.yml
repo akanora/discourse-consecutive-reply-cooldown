@@ -1,0 +1,28 @@
+en:
+  theme_metadata:
+    settings:
+      cooldown_enabled: "Prevent users from posting consecutive replies in a topic until the cooldown has passed."
+      cooldown_duration: "How long a user must wait before replying again to a topic whose last post is their own. The unit is set below."
+      cooldown_unit: "Unit of the cooldown duration (minutes or hours)."
+      exempt_staff: "Admins and moderators are exempt from this rule."
+      include_private_messages: "Also apply the rule to personal messages."
+      texts:
+        description: "Texts shown to users. Languages without a translation use the default text. Placeholders: {time_left}, {duration}, {count}, {hours}, {minutes}."
+        schema:
+          properties:
+            key:
+              label: Key
+              description: Which text this is
+            text:
+              label: Default text
+              description: Shown for languages without a translation
+            translations:
+              label: Translations
+              description: Per-language overrides for this text
+              properties:
+                locale:
+                  label: Language
+                  description: Select the language for this translation
+                text:
+                  label: Text
+                  description: Translated text for this language
